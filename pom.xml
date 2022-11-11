@@ -10,7 +10,7 @@
     <packaging>hpi</packaging>
     <name>Permissive Script Security Plugin</name>
     <description>Do not install unless you know what you are doing. Turns on permissive mode of Script Security Plugin. Problematic signatures will be logged but access will not be rejected.</description>
-    <url>https://wiki.jenkins-ci.org/display/JENKINS/Permissive+Script+Security+Plugin</url>
+    <url>https://github.com/mamh-java/permissive-script-security-plugin.git</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -72,9 +72,9 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
-        <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+        <connection>scm:git:https://github.com/mamh-java/permissive-script-security-plugin.git</connection>
+        <developerConnection>scm:git:https://github.com/mamh-java/permissive-script-security-plugin.git</developerConnection>
+        <url>https://github.com/mamh-java/permissive-script-security-plugin.git</url>
       <tag>HEAD</tag>
     </scm>
 
