@@ -59,7 +59,6 @@ public class PermissiveWhitelist extends Whitelist {
         DISABLED() {
             @Override
             public boolean act(Function<Whitelist, Boolean> check, Supplier<RejectedAccessException> reject) {
-                LOGGER.log(Level.INFO, "disable, return false: check: " + check + ", reject: " + reject);
                 return false;
             }
         },
@@ -71,7 +70,6 @@ public class PermissiveWhitelist extends Whitelist {
             private final ReentrantLock rl = new ReentrantLock();
             @Override
             public boolean act(Function<Whitelist, Boolean> check, Supplier<RejectedAccessException> reject) {
-                LOGGER.log(Level.INFO, "enabled: check: " + check + ", reject: " + reject);
                 // Break the recursion _not_ whitelisting the signature - we need to know what would happen without this whitelist
                 if (rl.isHeldByCurrentThread()) return false;
 
@@ -91,7 +89,6 @@ public class PermissiveWhitelist extends Whitelist {
         NO_SECURITY() {
             @Override
             public boolean act(Function<Whitelist, Boolean> check, Supplier<RejectedAccessException> reject) {
-                LOGGER.log(Level.INFO, "no security, return true: check: " + check + ", reject: " + reject);
                 return true;
             }
         };
