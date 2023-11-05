@@ -38,7 +38,6 @@ import java.lang.reflect.Method;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.function.Function;
 import java.util.function.Supplier;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
@@ -78,7 +77,6 @@ public class PermissiveWhitelist extends Whitelist {
                     Boolean otherwiseWhitelisted = check.apply(Whitelist.all());
                     if (!otherwiseWhitelisted) {
                         RejectedAccessException raj = reject.get();
-                        LOGGER.log(Level.INFO, "Unsecure signature found: " + raj.getSignature(), raj);
                     }
                     return true;
                 } finally {
