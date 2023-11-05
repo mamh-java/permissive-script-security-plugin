@@ -23,7 +23,7 @@
     <version>0.8-SNAPSHOT</version>
     <packaging>hpi</packaging>
     <name>Permissive Script Security Plugin</name>
-    <url>https://github.com/jenkinsci/permissive-script-security-plugin</url>
+    <url>https://github.com/mamh-java/permissive-script-security-plugin.git</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -77,9 +77,9 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
-        <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+        <connection>scm:git:https://github.com/mamh-java/permissive-script-security-plugin.git</connection>
+        <developerConnection>scm:git:https://github.com/mamh-java/permissive-script-security-plugin.git</developerConnection>
+        <url>https://github.com/mamh-java/permissive-script-security-plugin</url>
       <tag>HEAD</tag>
     </scm>
 
