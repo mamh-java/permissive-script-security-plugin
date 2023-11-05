@@ -20,7 +20,7 @@
     </parent>
 
     <artifactId>permissive-script-security</artifactId>
-    <version>0.8-SNAPSHOT</version>
+    <version>0.8</version>
     <packaging>hpi</packaging>
     <name>Permissive Script Security Plugin</name>
     <url>https://github.com/mamh-java/permissive-script-security-plugin.git</url>
